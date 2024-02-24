@@ -1,6 +1,12 @@
 /*
  * Globals
  */
+ *{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+
+ }
 
 
 /* Custom default button */
@@ -11,11 +17,6 @@
   text-shadow: none; /* Prevent inheritance from `body` */
 }
 
-
-/*
- * Base structure
- */
-
 body {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
@@ -24,11 +25,28 @@ body {
 .cover-container {
   max-width: 42em;
 }
-
+.card
 
 /*
  * Header
  */
+ .banner-wrap {
+  background-image: url(./assets/googleimage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+.overlay {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 60%;
+  position: absolute;
+  top: 0;
+}
 
 .nav-masthead .nav-link {
   color: rgba(255, 255, 255, .5);
@@ -47,4 +65,13 @@ body {
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
+}
+header{
+  background: grey;
+  opacity: 80%;
+}
+.scrolling{
+  background: grey;
+  opacity: 80%;
+  transition: all 0.5s;
 }
